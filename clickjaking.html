@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Test</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        button {
+            position: absolute;
+            top: 31px;
+            right: 44px;
+            z-index: 1000;
+            padding: 12px 24px;
+            font-size: 16px;
+   background-color: #fff;
+            cursor: pointer;
+   border-radius: 25px;
+font-color: rgb(252, 114, 255);
+font-weight: 200;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 100;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://app.hyperliquid.xyz" frameborder="0"></iframe>
+</body>
+</html>
